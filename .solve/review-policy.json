@@ -1,0 +1,17 @@
+{
+  "schema": "solve-pr-review-policy.v1",
+  "repository": "tangle-solve/pr-review-pilot",
+  "policyPath": ".solve/review-policy.json",
+  "problemMarker": "solve-pr-review-pilot-v1",
+  "baseRef": "main",
+  "allowedPathPrefixes": ["submissions/"],
+  "limits": {
+    "maxFiles": 4,
+    "maxFileBytes": 65536,
+    "maxTotalBytes": 131072
+  },
+  "evaluator": {
+    "path": ".solve/evaluator.mjs",
+    "sha256": "47b6fb4bf1f5f6f9fac8dc1e6c80b1db2d2296343bb19d2b04f4546a1d25e9e9"
+  }
+}
